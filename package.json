@@ -1,0 +1,50 @@
+{
+  "name": "second-portfolio",
+  "version": "1.0.0",
+  "description": "Just a portfolio web site with creative layout",
+  "main": "index.js",
+  "browserslist": [
+    "last 5 versions"
+  ],
+  "scripts": {
+    "sass:watch": "sass --no-source-map --watch scss:dist/css-compile",
+    "postcss:watch": "postcss dist/css-compile/main.css --dir dist/css --watch",
+    "minify": "npx postcss dist/css/main.css > dist/css/main.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krypton225/Second-Portfolio.git"
+  },
+  "keywords": [
+    "HTML",
+    "HTML5",
+    "CSS",
+    "CSS3",
+    "Sass",
+    "Bootstrap",
+    "TypeScript",
+    "JavaScript",
+    "ES6",
+    "Git",
+    "Github",
+    "NPM"
+  ],
+  "author": "Khaled Mohamed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krypton225/Second-Portfolio/issues"
+  },
+  "homepage": "https://github.com/krypton225/Second-Portfolio#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-preset-env": "^7.8.2"
+  }
+}
