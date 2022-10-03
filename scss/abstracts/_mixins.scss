@@ -24,6 +24,12 @@
     justify-content: center;
 }
 
+@mixin flex-evenly-horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    @include flex-center-vertical;
+}
+
 @mixin cover-background {
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,10 +40,8 @@
     @if $type== "hide" {
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0.4s, opacity 0.4s;
     } @else if $type== "show" {
         visibility: visible;
         opacity: 1;
-        transition: visibility 0.4s, opacity 0.4s;
     }
 }

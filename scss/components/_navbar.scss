@@ -1,0 +1,60 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+.list {
+    width: 80%;
+    min-height: 5rem;
+    padding: 0.7rem 1.4rem !important;
+    border-radius: 1.4rem;
+    @include flex-evenly-horizontal;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.2rem;
+    color: $light;
+    background-color: $dark;
+
+    @include media-breakpoint-down(md) {
+        width: 93%;
+        font-size: 1.8rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 64%;
+    }
+
+    .list-item {
+        position: relative;
+        padding: 0.3rem;
+        cursor: pointer;
+
+        &::before {
+            content: attr(data-name-sec);
+            width: 10rem;
+            border-radius: 1.4rem;
+            padding: 0.6rem 0.8rem;
+            position: absolute;
+            top: -100%;
+            left: -80%;
+            color: $light;
+            background-color: $dark;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 1.6rem;
+            user-select: none;
+            @include fade("hide");
+            transition: all 0.2s ease-in;
+
+            @include media-breakpoint-down(md) {
+                content: none;
+            }
+        }
+
+        &:hover::before {
+            top: -145%;
+            @include fade("show");
+        }
+    }
+}
