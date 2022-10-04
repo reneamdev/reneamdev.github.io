@@ -42,13 +42,13 @@
             left: 50%;
             transform: translateX(-50%);
             color: $light;
-            background-color: $dark;
+            background-color: $primary;
             text-align: center;
             text-transform: capitalize;
             font-size: 1.6rem;
             user-select: none;
             @include fade("hide");
-            transition: all 0.2s ease-in;
+            @include set-transition(all, 0.2s, ease-in, 0s);
 
             @include media-breakpoint-down(md) {
                 content: none;
