@@ -1,0 +1,17 @@
+.custom-btn {
+    width: 16rem;
+    display: block;
+    padding: 0.5rem 0.1rem;
+    border-radius: 1rem;
+    color: $primary;
+    background-color: $light;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 600;
+    @include setTransition(background-color);
+
+    &:hover {
+        background-color: darken($light, 10%);
+    }
+}

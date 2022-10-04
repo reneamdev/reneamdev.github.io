@@ -8,13 +8,14 @@
     padding: 0.7rem 1.4rem !important;
     border-radius: 1.4rem;
     @include flex-evenly-horizontal;
-    position: absolute;
+    position: fixed;
     bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2.2rem;
     color: $light;
-    background-color: $dark;
+    background-color: $primary;
+    z-index: 999999999999;
 
     @include media-breakpoint-down(md) {
         width: 93%;
@@ -37,7 +38,8 @@
             padding: 0.6rem 0.8rem;
             position: absolute;
             top: -100%;
-            left: -80%;
+            left: 50%;
+            transform: translateX(-50%);
             color: $light;
             background-color: $dark;
             text-align: center;

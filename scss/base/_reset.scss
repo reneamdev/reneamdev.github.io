@@ -1,3 +1,8 @@
+::selection {
+    background-color: $success;
+    color: $primary;
+}
+
 ul {
     margin: 0 !important;
     padding: 0 !important;
@@ -5,11 +10,22 @@ ul {
 }
 
 a {
-    text-decoration: none;
+    // TODO:
+    text-decoration: none !important;
 
     &:focus,
     &:visited,
     &:active {
-        text-decoration: none;
+        text-decoration: none !important;
     }
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+section {
+    overflow-x: hidden;
 }

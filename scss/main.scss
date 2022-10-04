@@ -2,6 +2,7 @@
 @import "./abstracts/variables";
 @import "./abstracts/colors";
 @import "./abstracts/mixins";
+@import "./abstracts/common";
 
 // * Base.
 @import "./base/reset";
@@ -13,6 +14,9 @@
 @import "./components/buttons";
 @import "./components/main-section";
 @import "./components/navbar";
+
+// * Layout
+@import "./layout/home";
 
 // * Vendors.
 @import "./vendors/get-bootstrap";
