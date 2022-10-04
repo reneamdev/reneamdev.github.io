@@ -5,9 +5,7 @@
         z-index: 300;
 
         .row {
-            @include media-breakpoint-down(md) {
-                margin-top: -4rem;
-            }
+            margin-bottom: 6.5rem;
         }
     }
 

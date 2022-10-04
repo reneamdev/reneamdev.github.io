@@ -4,6 +4,7 @@
     position: relative;
     background-image: url("../../assets/images/backgrounds/laptop.jpg");
     @include cover-background;
+    overflow-x: hidden;
 
     &::before {
         content: "";

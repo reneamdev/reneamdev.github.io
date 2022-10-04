@@ -42,6 +42,8 @@
     <!--[if lt IE 9]>
         <script src="dist/js/html5shiv.js"></script>
     <![endif]-->
+
+    <script defer src="./dist/js/loader.js"></script>
 </head>
 
 <body>
@@ -68,6 +70,7 @@
             </svg>
         </div> <!-- ./preloader -->
 
+        <!-- * Start list section -->
         <ul class="list" id="list">
             <li id="item-home" class="list-item" data-name-sec="home">
                 <i class="fa-solid fa-house"></i>
@@ -107,7 +110,7 @@
         </ul> <!-- ./list -->
 
         <!-- * Start home section -->
-        <section class="home full-screen" id="home">
+        <section class="home full-screen-left" id="home">
             <div class="container">
                 <div class="row align-items-center gx-0 gy-sm-4 mx-auto text-center">
                     <div class="col-md-6">
@@ -128,18 +131,81 @@
                                 I'm a Front End Developer & Graphic Designer!<br>
                                 I'm a Freelancer Web Developer at upwork.com.
                             </p> <!-- ./home__info__desc -->
-                            <a class="custom-btn mx-auto" href="#">read more</a>
+                            <a id="read-more-home" class="custom-btn mx-auto" href="#">read more</a>
                         </div> <!-- ./home__info -->
                     </div> <!-- ./col-md-6 -->
                 </div> <!-- ./row -->
             </div> <!-- ./container -->
         </section> <!-- ./home -->
+
+        <!-- * Start about section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row align-items-center gx-0 gy-sm-4 mx-auto">
+                    <div class="col-md-8">
+                        <h3 class="about__title">james oliver</h3>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="about__info">
+                                    <span class="about__info__label">job: </span><br>
+                                    <span class="about__info__value">front end developer</span><br>
+                                </div> <!-- ./about__info -->
+
+                                <div class="about__info">
+                                    <span class="about__info__label">degree: </span><br>
+                                    <span class="about__info__value">master</span><br>
+                                </div> <!-- ./about__info -->
+
+                                <div class="about__info">
+                                    <span class="about__info__label">address: </span><br>
+                                    <span class="about__info__value">123 street, new york, USA</span><br>
+                                </div> <!-- ./about__info -->
+
+                                <div class="about__info">
+                                    <span class="about__info__label">phone: </span><br>
+                                    <span class="about__info__value">+012 345 6789</span><br>
+                                </div> <!-- ./about__info -->
+                            </div> <!-- ./col-sm-6 -->
+
+                            <div class="col-sm-6 mx-auto">
+                                <div class="about__info">
+                                    <span class="about__info__label">birthday: </span><br>
+                                    <span class="about__info__value">22 may 1998</span><br>
+                                </div> <!-- ./about__info -->
+
+                                <div class="about__info">
+                                    <span class="about__info__label">experience: </span><br>
+                                    <span class="about__info__value">4 years</span><br>
+                                </div> <!-- ./about__info -->
+
+                                <div class="about__info">
+                                    <span class="about__info__label">email: </span><br>
+                                    <span class="about__info__value">james.oliver@gmail.com</span><br>
+                                </div> <!-- ./about__info -->
+
+                                <div class="about__info">
+                                    <span class="about__info__label">freelance: </span><br>
+                                    <span class="about__info__value">available</span><br>
+                                </div> <!-- ./about__info -->
+                            </div> <!-- ./col-sm-6 -->
+                        </div> <!-- ./row -->
+                    </div> <!-- ./col-md-6 -->
+
+                    <div class="col-md-4">
+                        <div class="about__img">
+                            <img src="./assets/images/person/man-2-min.jpg"
+                                alt="James Oliver's picture in about section" draggable="false">
+                        </div> <!-- ./about__img -->
+                    </div> <!-- ./col-md-6 -->
+                </div> <!-- ./row -->
+            </div> <!-- ./container -->
+        </section> <!-- ./about -->
     </main> <!-- ./main -->
 
     <!-- * All my script files -->
     <script type="module" src="./dist/js/imports.js"></script>
     <script src="./dist/js/main.js"></script>
-    <script src="./dist/js/loader.js"></script>
 </body>
 
 </html>

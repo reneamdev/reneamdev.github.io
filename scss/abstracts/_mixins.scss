@@ -84,5 +84,6 @@
 
 @mixin main-section-props-right {
     @include main-props;
+    @include fade("show");
     right: -100%;
 }
