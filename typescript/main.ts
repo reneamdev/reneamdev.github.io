@@ -10,11 +10,6 @@ function changeListItems() {
         li.addEventListener("click", () => {
             document.querySelectorAll("section").forEach((sec) => {
                 sec.classList.remove("full-screen");
-
-                // setTimeout(() => {
-                //     sec.style.borderRadius = "0.1rem";
-                //     sec.style.border = "none";
-                // }, 500);
             });
 
             if (li.getAttribute("id") === "item-home") {
