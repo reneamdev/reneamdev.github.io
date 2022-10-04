@@ -8,6 +8,7 @@
     padding: 0.7rem 1.4rem !important;
     border-radius: 1.4rem;
     @include flex-evenly-horizontal;
+    @include flex-center-vertical;
     position: fixed;
     bottom: 4rem;
     left: 50%;
