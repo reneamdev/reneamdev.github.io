@@ -6,6 +6,7 @@ changeListItems();
 function changeListItems() {
     let home = <HTMLElement>document.getElementById("home");
     let about = <HTMLElement>document.getElementById("about");
+    let quality = <HTMLElement>document.getElementById("quality");
 
     function removeFullScreenFromAllSections() {
         document.querySelectorAll("section").forEach((sec) => {
@@ -22,6 +23,8 @@ function changeListItems() {
                 home.classList.add("full-screen-left");
             } else if (li.getAttribute("id") === "item-about") {
                 about.classList.add("full-screen-right");
+            } else if (li.getAttribute("id") === "item-quality") {
+                quality.classList.add("full-screen-left");
             }
         });
     });
