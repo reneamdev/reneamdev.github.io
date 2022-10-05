@@ -8,6 +8,15 @@ function changeListItems() {
     let about = <HTMLElement>document.getElementById("about");
     let quality = <HTMLElement>document.getElementById("quality");
     let skills = <HTMLElement>document.getElementById("skills");
+    let services = <HTMLElement>document.getElementById("services");
+
+    const icons = document.querySelectorAll("#icon-div div");
+
+    function removeDegrees() {
+        icons.forEach((el) => {
+            el.className = el.className.replace(/deg-\d+/gi, "");
+        });
+    }
 
     function removeFullScreenFromAllSections() {
         document.querySelectorAll("section").forEach((sec) => {
@@ -15,10 +24,30 @@ function changeListItems() {
         });
     }
 
+    function setAnimationServiceSection() {
+
+        icons.forEach((div, index) => {
+            if (index === 0) {
+                div.classList.add("deg-45");
+            } else if (index === 1) {
+                div.classList.add("deg-90");
+            } else if (index === 2) {
+                div.classList.add("deg-135");
+            } else if (index === 3) {
+                div.classList.add("deg-180");
+            } else if (index === 4) {
+                div.classList.add("deg-230");
+            } else if (index === 5) {
+                div.classList.add("deg-270");
+            }
+        });
+    }
+
     Array.from(document.querySelectorAll(".main .list li")).forEach((li) => {
         li.addEventListener("click", () => {
 
             removeFullScreenFromAllSections();
+            removeDegrees();
 
             if (li.getAttribute("id") === "item-home") {
                 home.classList.add("full-screen-left");
@@ -28,6 +57,9 @@ function changeListItems() {
                 quality.classList.add("full-screen-left");
             } else if (li.getAttribute("id") === "item-skills") {
                 skills.classList.add("full-screen-right");
+            } else if (li.getAttribute("id") === "item-services") {
+                setAnimationServiceSection();
+                services.classList.add("full-screen-left");
             }
         });
     });
