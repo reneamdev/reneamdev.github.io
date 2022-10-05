@@ -4,6 +4,7 @@ function changeListItems() {
     let home = document.getElementById("home");
     let about = document.getElementById("about");
     let quality = document.getElementById("quality");
+    let skills = document.getElementById("skills");
     function removeFullScreenFromAllSections() {
         document.querySelectorAll("section").forEach((sec) => {
             sec.classList.remove("full-screen-left", "full-screen-right");
@@ -20,6 +21,9 @@ function changeListItems() {
             }
             else if (li.getAttribute("id") === "item-quality") {
                 quality.classList.add("full-screen-left");
+            }
+            else if (li.getAttribute("id") === "item-skills") {
+                skills.classList.add("full-screen-right");
             }
         });
     });

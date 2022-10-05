@@ -28,16 +28,7 @@
         }
 
         &::before {
-            content: "";
-            width: 100%;
-            height: 0.3rem;
-            border-radius: 0.4rem;
-            position: absolute;
-            bottom: -0.2rem;
-            background-color: $steel-teal;
-            transform: scaleX(0);
-            transform-origin: right;
-            @include set-transition(transform, 0.34s, ease-in, 0s);
+            @include scale-line-left-right;
         }
 
         &:hover::before {
