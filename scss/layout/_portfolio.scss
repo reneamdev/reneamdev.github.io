@@ -1,0 +1,70 @@
+.portfolio {
+    @include main-section-props-right;
+    text-transform: capitalize;
+    color: $light;
+
+    .container {
+        z-index: 300;
+    }
+
+    .my-card {
+        width: 36rem;
+        height: auto;
+        padding: 0 0 1.2rem;
+        border-radius: 0.7rem;
+        background-color: $primary;
+
+        &__img {
+            width: 100%;
+            position: relative;
+
+            img {
+                border-radius: 0.7rem 0.7rem 0 0;
+            }
+
+            &__links {
+                width: 100%;
+                height: 100%;
+                border-radius: 0.7rem 0.7rem 0 0;
+                @include flex-center;
+                position: absolute;
+                top: -100%;
+                left: 0;
+                z-index: 9999;
+                background-color: #3b60649c;
+                @include set-transition(top, 0.3s, ease-in-out, 0s);
+
+                a {
+                    width: 4rem;
+                    height: 4rem;
+                    @include flex-center;
+                    border-radius: 50%;
+                    color: $light;
+                    background-color: $primary;
+                    margin-inline: 1rem;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        &:hover .my-card__img__links {
+            top: 0;
+        }
+
+        &__info {
+            margin-top: 1.4rem;
+            @include media-breakpoint-up(xl) {
+                margin-top: 1.1rem;
+            }
+
+            &__title {
+                font-size: 1.7rem !important;
+                font-weight: 600;
+            }
+
+            &__desc {
+                font-size: 1.3rem !important;
+            }
+        }
+    }
+}

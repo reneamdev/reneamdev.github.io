@@ -6,6 +6,7 @@ function changeListItems() {
     let quality = document.getElementById("quality");
     let skills = document.getElementById("skills");
     let services = document.getElementById("services");
+    let portfolio = document.getElementById("portfolio");
     const icons = document.querySelectorAll("#icon-div div");
     function removeDegrees() {
         icons.forEach((el) => {
@@ -58,6 +59,9 @@ function changeListItems() {
             else if (li.getAttribute("id") === "item-services") {
                 setAnimationServiceSection();
                 services.classList.add("full-screen-left");
+            }
+            else if (li.getAttribute("id") === "item-portfolio") {
+                portfolio.classList.add("full-screen-right");
             }
         });
     });

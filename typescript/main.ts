@@ -1,6 +1,3 @@
-type str = string;
-type num = number;
-
 changeListItems();
 
 function changeListItems() {
@@ -9,6 +6,7 @@ function changeListItems() {
     let quality = <HTMLElement>document.getElementById("quality");
     let skills = <HTMLElement>document.getElementById("skills");
     let services = <HTMLElement>document.getElementById("services");
+    let portfolio = <HTMLElement>document.getElementById("portfolio");
 
     const icons = document.querySelectorAll("#icon-div div");
 
@@ -60,6 +58,8 @@ function changeListItems() {
             } else if (li.getAttribute("id") === "item-services") {
                 setAnimationServiceSection();
                 services.classList.add("full-screen-left");
+            } else if (li.getAttribute("id") === "item-portfolio") {
+                portfolio.classList.add("full-screen-right");
             }
         });
     });
