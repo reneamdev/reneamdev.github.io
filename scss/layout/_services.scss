@@ -56,6 +56,30 @@
                 cursor: pointer;
                 @include set-transition(all, 0.5s, ease-in-out, 0.4s);
 
+                &::before {
+                    content: attr(data-service-name);
+                    width: 12rem;
+                    height: 3rem;
+                    padding: 0.3rem 1rem;
+                    border-radius: 0.7rem;
+                    @include flex-center;
+                    position: absolute;
+                    top: -40%;
+                    left: -60%;
+                    text-align: center;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    letter-spacing: 0.05rem;
+                    @include fade("hide");
+                    background-color: $primary;
+                    @include set-transition(all, 0.3s, ease-in-out, 0s);
+                }
+
+                &:hover::before {
+                    top: -80%;
+                    @include fade("show");
+                }
+
                 &.deg-45 {
                     transform: translate(-17rem, -9rem) scale(1);
                 }
