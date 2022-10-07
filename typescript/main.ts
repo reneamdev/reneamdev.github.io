@@ -9,6 +9,7 @@ function changeListItems() {
     let services = <HTMLElement>document.getElementById("services");
     let portfolio = <HTMLElement>document.getElementById("portfolio");
     let reviews = <HTMLElement>document.getElementById("reviews");
+    let contact = <HTMLElement>document.getElementById("contact");
 
     const icons = document.querySelectorAll("#icon-div div");
 
@@ -64,6 +65,8 @@ function changeListItems() {
                 portfolio.classList.add("full-screen-right");
             } else if (li.getAttribute("id") === "item-reviews") {
                 reviews.classList.add("full-screen-left");
+            } else if (li.getAttribute("id") === "item-contact") {
+                contact.classList.add("full-screen-right");
             }
         });
     });

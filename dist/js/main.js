@@ -9,6 +9,7 @@ function changeListItems() {
     let services = document.getElementById("services");
     let portfolio = document.getElementById("portfolio");
     let reviews = document.getElementById("reviews");
+    let contact = document.getElementById("contact");
     const icons = document.querySelectorAll("#icon-div div");
     function removeDegrees() {
         icons.forEach((el) => {
@@ -67,6 +68,9 @@ function changeListItems() {
             }
             else if (li.getAttribute("id") === "item-reviews") {
                 reviews.classList.add("full-screen-left");
+            }
+            else if (li.getAttribute("id") === "item-contact") {
+                contact.classList.add("full-screen-right");
             }
         });
     });

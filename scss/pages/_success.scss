@@ -1,0 +1,27 @@
+.page {
+    min-width: 100vw;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    @include flex-center-column;
+    color: $light !important;
+    background-color: $primary;
+    text-transform: capitalize;
+
+    a {
+        width: fit-content;
+        padding: 0.8rem 1.5rem;
+        margin-top: 2rem;
+        border-radius: 0.4rem;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $light !important;
+        background-color: $dark !important;
+        @include set-transition(all, 0.3s, ease, 0s);
+
+        &:hover {
+            background-color: lighten($dark, 10%) !important;
+        }
+    }
+}
