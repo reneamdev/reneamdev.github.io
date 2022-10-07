@@ -60,9 +60,15 @@
 
                 &__name,
                 &__job {
+                    width: fit-content;
+                    position: relative;
                     font-size: 1.6rem;
                     font-weight: 700;
                     letter-spacing: 0.09rem;
+                }
+
+                &__job {
+                    color: $steel-teal;
                 }
             }
         }
