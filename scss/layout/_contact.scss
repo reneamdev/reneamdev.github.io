@@ -1,0 +1,48 @@
+.contact {
+    @include main-section-props-right;
+    color: $light;
+
+    .container {
+        z-index: 300;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 1vmax;
+        border: 0.05rem solid #c9e4ca98;
+        outline: none;
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $light;
+        background-color: transparent;
+        caret-color: $light;
+
+        &::placeholder {
+            text-transform: capitalize;
+            color: #c9e4ca52;
+        }
+    }
+
+    textarea {
+        height: 15rem;
+        resize: none;
+    }
+
+    .my-btn {
+        width: 14rem;
+        padding: 0.5rem 1rem;
+        border-radius: 1vmax;
+        border: 0.05rem solid $primary;
+        background-color: $primary;
+        color: $light;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+    }
+}

@@ -2,16 +2,32 @@
 @import "./abstracts/variables";
 @import "./abstracts/colors";
 @import "./abstracts/mixins";
+@import "./abstracts/common";
 
 // * Base.
 @import "./base/reset";
 @import "./base/typography";
+@import "./base/animations";
 @import "./base/nunito";
 @import "./base/dancing-script";
 
 // * Components.
 @import "./components/buttons";
+@import "./components/main-section";
+@import "./components/navbar";
+@import "./components/loader";
+
+// * Layout
+@import "./layout/home";
+@import "./layout/about";
+@import "./layout/quality";
+@import "./layout/skills";
+@import "./layout/services";
+@import "./layout/portfolio";
+@import "./layout/reviews";
+@import "./layout/contact";
 
 // * Vendors.
 @import "./vendors/get-bootstrap";
 @import "./vendors/get-fontawesome";
+@import "./vendors/swipper";

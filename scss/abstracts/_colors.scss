@@ -1,5 +1,14 @@
+// * Main colors which used in the site.
 $tea-green: #c9e4ca;
 $eton-blue: #87bba2;
 $steel-teal: #55828b;
 $deep-space-sparkle: #3b6064;
 $charcoal: #364958;
+$dark-green: #0f4c5c;
+
+// * Reset the main colors of bootstrap.
+$primary: $charcoal;
+$secondary: $deep-space-sparkle;
+$light: $tea-green;
+$dark: $dark-green;
+$success: $eton-blue;

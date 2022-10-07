@@ -1,5 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+::selection {
+    background-color: $success;
+    color: $primary;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style-type: none;
+}
+
+a {
+    // TODO:
+    text-decoration: none !important;
+
+    &:focus,
+    &:visited,
+    &:active {
+        text-decoration: none !important;
+    }
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+section {
+    overflow-x: hidden;
 }

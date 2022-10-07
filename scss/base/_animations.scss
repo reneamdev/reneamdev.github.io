@@ -1,0 +1,23 @@
+@keyframes move-left-to-right {
+    0% {
+        @include fade("hide");
+        transform: translateX(10.6rem);
+    }
+
+    100% {
+        @include fade("show");
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes move-right-to-left {
+    0% {
+        @include fade("hide");
+        transform: translateX(-10.6rem);
+    }
+
+    100% {
+        @include fade("show");
+        transform: translateX(0rem);
+    }
+}

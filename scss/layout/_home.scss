@@ -1,0 +1,115 @@
+.home {
+    @include main-section-props-left;
+
+    .container {
+        z-index: 300;
+
+        .row {
+            margin-bottom: 6.5rem;
+        }
+    }
+
+    &__img {
+        width: 28rem;
+        height: 28rem;
+        padding: 1rem;
+        border: 0.6rem solid $light;
+        border-radius: 35%;
+        overflow: hidden;
+
+        @include media-breakpoint-down(md) {
+            width: 22rem;
+            height: 22rem;
+            margin-bottom: 1.1rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 35%;
+            @include set-transition(transform, 0.4s, ease-in, 0s);
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__info {
+        color: $light;
+
+        @include media-breakpoint-up(lg) {
+            letter-spacing: 0.1rem;
+        }
+
+        &__title {
+            width: fit-content;
+            position: relative;
+            padding: 0.3rem 1rem;
+            margin-inline: auto;
+            text-align: center;
+            border-radius: 1.2rem;
+            text-align: center;
+            font-size: 4.4rem;
+
+            span {
+                width: 0;
+                height: 100%;
+                border-radius: 0.6rem;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $steel-teal;
+                z-index: -1;
+                @include set-transition(width, 0.4s, ease, 0s);
+            }
+
+            &:hover {
+                span {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__desc {
+            width: 100%;
+            font-size: 1.8rem;
+
+            @include media-breakpoint-down(lg) {
+                margin-block: 2rem;
+                font-size: 1.6rem;
+            }
+        }
+
+        &__btn {
+            overflow: hidden;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: scaleX(0);
+                transform-origin: right;
+                background-color: rgba(114, 114, 114, 0.418);
+                z-index: 250;
+                @include set-transition(transform, 0.3s, ease-in, 0s);
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+
+            &:hover {
+                color: $dark;
+            }
+        }
+    }
+}
