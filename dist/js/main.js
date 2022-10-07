@@ -1,6 +1,18 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 changeBackgroundAfterWhile();
 changeListItems();
+window.addEventListener("load", () => {
+    setCommentsInReviews();
+});
 function changeListItems() {
     let home = document.getElementById("home");
     let about = document.getElementById("about");
@@ -118,5 +130,17 @@ function changeBackgroundAfterWhile() {
             main.style.backgroundImage = `url("../../assets/images/backgrounds/${myImages[myRandomNumber].imgSrc}")`;
         }, 5000);
     }
+}
+function setCommentsInReviews() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const API_URL = "https://jsonplaceholder.typicode.com/comments";
+        let txtComment = document.querySelectorAll(".review-card__text");
+        const res = yield fetch(API_URL);
+        const data = yield res.json();
+        txtComment[0].textContent = data[0].body;
+        for (let i = 1; i < txtComment.length; i++) {
+            txtComment[i].textContent = `" ${data[i].body} "`;
+        }
+    });
 }
 //# sourceMappingURL=main.js.map

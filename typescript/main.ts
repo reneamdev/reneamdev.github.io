@@ -1,6 +1,10 @@
 changeBackgroundAfterWhile();
 changeListItems();
 
+window.addEventListener("load", () => {
+    setCommentsInReviews();
+});
+
 function changeListItems() {
     let home = <HTMLElement>document.getElementById("home");
     let about = <HTMLElement>document.getElementById("about");
@@ -120,5 +124,20 @@ function changeBackgroundAfterWhile() {
             let myRandomNumber = getRandomNumber(myImages.length);
             main.style.backgroundImage = `url("../../assets/images/backgrounds/${myImages[myRandomNumber].imgSrc}")`;
         }, 5000);
+    }
+}
+
+async function setCommentsInReviews() {
+    const API_URL = "https://jsonplaceholder.typicode.com/comments";
+    let txtComment = <NodeList>document.querySelectorAll(".review-card__text");
+
+
+    const res = await fetch(API_URL);
+    const data = await res.json();
+
+    txtComment[0].textContent = data[0].body;
+
+    for (let i = 1; i < txtComment.length; i++) {
+        txtComment[i].textContent = `" ${data[i].body} "`;
     }
 }
