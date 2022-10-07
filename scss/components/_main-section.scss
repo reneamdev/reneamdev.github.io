@@ -5,6 +5,7 @@
     background-image: url("../../assets/images/backgrounds/laptop.jpg");
     @include cover-background;
     overflow-x: hidden;
+    @include set-transition(background-image, 1s, ease-in, 0s);
 
     &::before {
         content: "";

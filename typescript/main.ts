@@ -1,3 +1,4 @@
+changeBackgroundAfterWhile();
 changeListItems();
 
 function changeListItems() {
@@ -76,4 +77,45 @@ function changeListItems() {
     }
 
     readMoreHome();
+}
+
+function changeBackgroundAfterWhile() {
+    let bgChanging = true;
+
+    const main = <HTMLElement>document.getElementById("main");
+
+    const getRandomNumber = (index: number) => {
+        return Math.floor(Math.random() * index);
+    };
+
+    const myImages = [
+        {
+            imgSrc: "coding.jpg",
+        },
+        {
+            imgSrc: "computers.jpg",
+        },
+        {
+            imgSrc: "keyboard.jpg",
+        },
+        {
+            imgSrc: "laptop.jpg",
+        },
+        {
+            imgSrc: "laptop-2.jpg",
+        },
+        {
+            imgSrc: "laptop-3.jpg",
+        },
+        {
+            imgSrc: "screens.jpg",
+        },
+    ];
+
+    if (bgChanging) {
+        setInterval(() => {
+            let myRandomNumber = getRandomNumber(myImages.length);
+            main.style.backgroundImage = `url("../../assets/images/backgrounds/${myImages[myRandomNumber].imgSrc}")`;
+        }, 5000);
+    }
 }
