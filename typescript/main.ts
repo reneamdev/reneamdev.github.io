@@ -7,6 +7,7 @@ function changeListItems() {
     let skills = <HTMLElement>document.getElementById("skills");
     let services = <HTMLElement>document.getElementById("services");
     let portfolio = <HTMLElement>document.getElementById("portfolio");
+    let reviews = <HTMLElement>document.getElementById("reviews");
 
     const icons = document.querySelectorAll("#icon-div div");
 
@@ -60,6 +61,8 @@ function changeListItems() {
                 services.classList.add("full-screen-left");
             } else if (li.getAttribute("id") === "item-portfolio") {
                 portfolio.classList.add("full-screen-right");
+            } else if (li.getAttribute("id") === "item-reviews") {
+                reviews.classList.add("full-screen-left");
             }
         });
     });

@@ -35,3 +35,15 @@ new Swiper(".mySwiper", {
         },
     }
 });
+
+new Swiper(".mySwiperReviews", {
+    slidesPerView: 1,
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 30,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    //     pauseOnMouseEnter: true,
+    // },
+});
