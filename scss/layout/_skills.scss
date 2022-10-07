@@ -12,6 +12,10 @@
         font-size: 3.6rem;
         color: $light;
 
+        @include media-breakpoint-down(md) {
+            margin-left: 1rem;
+        }
+
         &::before {
             @include scale-line-left-right;
         }
