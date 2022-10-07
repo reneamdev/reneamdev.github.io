@@ -41,9 +41,9 @@ new Swiper(".mySwiperReviews", {
     loop: true,
     grabCursor: true,
     spaceBetween: 30,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    //     pauseOnMouseEnter: true,
-    // },
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
 });
