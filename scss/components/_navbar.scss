@@ -51,7 +51,7 @@
             @include fade("hide");
             @include set-transition(all, 0.2s, ease-in, 0s);
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 content: none;
             }
         }
