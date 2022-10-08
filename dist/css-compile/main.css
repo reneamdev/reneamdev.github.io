@@ -1025,6 +1025,7 @@ body {
 .contact .my-btn {
   width: 14rem;
   padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
   border-radius: 1vmax;
   border: 0.05rem solid #364958;
   background-color: #364958;
