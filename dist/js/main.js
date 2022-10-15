@@ -1,5 +1,4 @@
 "use strict";
-changeBackgroundAfterWhile();
 changeListItems();
 function changeListItems() {
     let home = document.getElementById("home");
