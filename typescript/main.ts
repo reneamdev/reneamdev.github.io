@@ -1,4 +1,4 @@
-changeBackgroundAfterWhile();
+// changeBackgroundAfterWhile();
 changeListItems();
 
 // window.addEventListener("load", () => {
@@ -126,18 +126,3 @@ function changeBackgroundAfterWhile() {
         }, 5000);
     }
 }
-
-// async function setCommentsInReviews() {
-//     const API_URL = "https://jsonplaceholder.typicode.com/comments";
-//     let txtComment = <NodeList>document.querySelectorAll(".review-card__text");
-
-
-//     const res = await fetch(API_URL, { method: 'post' });
-//     const data = await res.json();
-
-//     txtComment[0].textContent = data[0].body;
-
-//     for (let i = 1; i < txtComment.length; i++) {
-//         txtComment[i].textContent = `" ${data[i].body} "`;
-//     }
-// }
