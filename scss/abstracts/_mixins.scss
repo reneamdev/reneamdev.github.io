@@ -1,3 +1,42 @@
+@mixin prefixing($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefixing-values($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -moz-#{$value};
+    #{$prop}: -ms-#{$value};
+    #{$prop}: -o-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin grid-columns($columns-number) {
+    display: grid;
+    grid-template-columns: repeat($columns-number, 1fr);
+}
+
+@mixin reset-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin hero-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include prefixing(transform, translate(-50%, -50%));
+}
+
+@mixin center-x {
+    display: block;
+    @include prefixing(margin-inline, auto);
+}
+
 @mixin absoluteTopLeftZero {
     position: absolute;
     top: 0;
