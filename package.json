@@ -1,5 +1,7 @@
 {
   "name": "second-portfolio",
+  "author": "Khaled Mohamed",
+  "license": "MIT",
   "version": "1.0.0",
   "description": "Just a portfolio web site with creative layout",
   "main": "index.js",
@@ -29,14 +31,11 @@
     "Github",
     "NPM"
   ],
-  "author": "Khaled Mohamed",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/krypton225/Second-Portfolio/issues"
   },
   "homepage": "https://github.com/krypton225/Second-Portfolio#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
     "bootstrap": "^5.2.2",
     "swiper": "^8.4.3"
   },
