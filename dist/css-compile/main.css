@@ -263,6 +263,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   visibility: visible;
   opacity: 1;
@@ -411,6 +415,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   visibility: visible;
   opacity: 1;
@@ -456,6 +464,10 @@ body {
   background-color: #55828b;
   transform: scaleX(0);
   transform-origin: right;
+  -webkit-transition: transform 0.34s ease-in 0s;
+  -moz-transition: transform 0.34s ease-in 0s;
+  -ms-transition: transform 0.34s ease-in 0s;
+  -o-transition: transform 0.34s ease-in 0s;
   transition: transform 0.34s ease-in 0s;
 }
 .about__title:hover::before {
@@ -534,6 +546,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   visibility: visible;
   opacity: 1;
@@ -622,6 +638,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   visibility: visible;
   opacity: 1;
@@ -661,6 +681,10 @@ body {
   background-color: #55828b;
   transform: scaleX(0);
   transform-origin: right;
+  -webkit-transition: transform 0.34s ease-in 0s;
+  -moz-transition: transform 0.34s ease-in 0s;
+  -ms-transition: transform 0.34s ease-in 0s;
+  -o-transition: transform 0.34s ease-in 0s;
   transition: transform 0.34s ease-in 0s;
 }
 .skills__title:hover::before {
@@ -753,6 +777,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   visibility: visible;
   opacity: 1;
@@ -948,6 +976,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   visibility: visible;
   opacity: 1;
@@ -1030,6 +1062,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   visibility: visible;
   opacity: 1;
@@ -1119,6 +1155,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   visibility: visible;
   opacity: 1;

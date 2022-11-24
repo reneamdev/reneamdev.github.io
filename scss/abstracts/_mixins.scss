@@ -95,10 +95,6 @@
     }
 }
 
-@mixin set-transition($prop: all, $duration-time: 0.3s, $function: ease-in, $delay: 0.4s) {
-    transition: $prop $duration-time $function $delay;
-}
-
 @mixin transition($prop, $time, $func, $delaying) {
     @if $func == ease {
         @include prefixing(transition, $prop #{$time}s ease #{$delaying}s);
@@ -120,7 +116,7 @@
     top: 0;
     @include flex-center;
     background-color: transparent;
-    @include set-transition(all, 0.5s, ease-in-out, 0s);
+    @include transition(all, 0.5, ease-in-out, 0);
 }
 
 @mixin main-section-props-left {
@@ -145,5 +141,5 @@
     background-color: $steel-teal;
     transform: scaleX(0);
     transform-origin: right;
-    @include set-transition(transform, 0.34s, ease-in, 0s);
+    @include transition(transform, 0.34, ease-in, 0);
 }
