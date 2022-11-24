@@ -16,13 +16,13 @@
     &__title {
         @include prefixing-values(width, fit-content);
         position: relative;
-        color: $light;
+        color: map-get($colors, "tea-green");
         font-size: 3.3rem;
         text-transform: capitalize;
         font-weight: 600;
 
         &::first-letter {
-            color: $steel-teal;
+            color: map-get($colors, "steel-teal");
             font-size: 3.4rem;
             text-transform: capitalize;
         }
@@ -78,12 +78,12 @@
         }
 
         &__label {
-            color: $steel-teal;
+            color: map-get($colors, "steel-teal");
             font-weight: 600;
         }
 
         &__value {
-            color: $light;
+            color: map-get($colors, "tea-green");
         }
     }
 }
