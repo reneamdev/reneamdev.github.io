@@ -1,30 +1,14 @@
 // * Abstract.
-@import "./abstracts/variables";
-@import "./abstracts/colors";
-@import "./abstracts/mixins";
-@import "./abstracts/common";
+@import "./abstracts/index";
 
 // * Base.
-@import "./base/reset";
-@import "./base/typography";
-@import "./base/nunito";
+@import "./base/index";
 
 // * Components.
-@import "./components/buttons";
-@import "./components/main-section";
-@import "./components/navbar";
-@import "./components/loader";
+@import "./components/index";
 
 // * Layout
-@import "./layout/home";
-@import "./layout/about";
-@import "./layout/quality";
-@import "./layout/skills";
-@import "./layout/services";
-@import "./layout/portfolio";
-@import "./layout/reviews";
-@import "./layout/contact";
+@import "./layout/index";
 
 // * Vendors.
-@import "./vendors/get-bootstrap";
-@import "./vendors/swipper";
+@import "./vendors/index";
