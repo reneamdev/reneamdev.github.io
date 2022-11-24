@@ -33,7 +33,7 @@
             &__info {
                 width: 100%;
                 @include flex-center-column;
-                flex-direction: column;
+                @include prefixing(flex-direction, column);
                 margin: 1rem auto;
                 text-align: center;
 
@@ -60,7 +60,7 @@
 
                 &__name,
                 &__job {
-                    width: fit-content;
+                    @include prefixing-values(width, fit-content);
                     position: relative;
                     font-size: 1.6rem;
                     font-weight: 700;
