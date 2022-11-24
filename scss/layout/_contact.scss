@@ -1,6 +1,6 @@
 .contact {
     @include main-section-props-right;
-    color: $light;
+    color: map-get($colors, "tea-green");
 
     .container {
         z-index: 300;
@@ -20,33 +20,35 @@
         text-transform: capitalize;
         font-size: 1.3rem;
         font-weight: bold;
-        color: $light;
+        color: map-get($colors, "tea-green");
         background-color: transparent;
-        caret-color: $light;
+        caret-color: map-get($colors, "tea-green");
+
+        --color-placeholder: #c9e4ca52;
 
         &::-webkit-input-placeholder {
             text-transform: capitalize;
-            color: #c9e4ca52;
+            color: var(--color-placeholder);
         }
 
         &::-moz-placeholder {
             text-transform: capitalize;
-            color: #c9e4ca52;
+            color: var(--color-placeholder);
         }
 
         &:-ms-input-placeholder {
             text-transform: capitalize;
-            color: #c9e4ca52;
+            color: var(--color-placeholder);
         }
 
         &::-ms-input-placeholder {
             text-transform: capitalize;
-            color: #c9e4ca52;
+            color: var(--color-placeholder);
         }
 
         &::placeholder {
             text-transform: capitalize;
-            color: #c9e4ca52;
+            color: var(--color-placeholder);
         }
     }
 
@@ -60,9 +62,9 @@
         padding: 0.5rem 1rem;
         margin-top: 0.5rem;
         border-radius: 1vmax;
-        border: 0.05rem solid $primary;
-        background-color: $primary;
-        color: $light;
+        border: 0.05rem solid map-get($colors, "charcoal");
+        background-color: map-get($colors, "charcoal");
+        color: map-get($colors, "tea-green");
         font-size: 1.4rem;
         text-transform: capitalize;
     }
