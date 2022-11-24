@@ -284,6 +284,10 @@ body {
   transition: transform 0.4s ease-in 0s;
 }
 .home__img:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 .home__info {
@@ -295,6 +299,10 @@ body {
   }
 }
 .home__info__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: -o-fit-content;
   width: fit-content;
   position: relative;
   padding: 0.3rem 1rem;
@@ -340,14 +348,30 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
   transform: scaleX(0);
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  -o-transform-origin: right;
   transform-origin: right;
   background-color: rgba(114, 114, 114, 0.418);
   z-index: 250;
   transition: transform 0.3s ease-in 0s;
 }
 .home__info__btn:hover::after {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
   transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
   transform-origin: left;
 }
 .home__info__btn:hover {

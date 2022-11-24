@@ -32,7 +32,7 @@
 
         &:hover {
             img {
-                transform: scale(1.1);
+                @include prefixing(transform, scale(1.1));
             }
         }
     }
@@ -45,7 +45,7 @@
         }
 
         &__title {
-            width: fit-content;
+            @include prefixing-values(width, fit-content);
             position: relative;
             padding: 0.3rem 1rem;
             margin-inline: auto;
@@ -95,16 +95,16 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                transform: scaleX(0);
-                transform-origin: right;
+                @include prefixing(transform, scaleX(0));
+                @include prefixing(transform-origin, right);
                 background-color: rgba(114, 114, 114, 0.418);
                 z-index: 250;
                 @include set-transition(transform, 0.3s, ease-in, 0s);
             }
 
             &:hover::after {
-                transform: scaleX(1);
-                transform-origin: left;
+                @include prefixing(transform, scaleX(1));
+                @include prefixing(transform-origin, left);
             }
 
             &:hover {
