@@ -529,6 +529,10 @@ body {
   border-left: 0.1rem solid #87bba2;
 }
 .quality__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: -o-fit-content;
   width: fit-content;
   position: relative;
   margin-bottom: 4.5rem;
