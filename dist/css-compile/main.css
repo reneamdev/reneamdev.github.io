@@ -384,6 +384,8 @@ body {
 .about__title {
   width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: -o-fit-content;
   width: fit-content;
   position: relative;
   color: #c9e4ca;

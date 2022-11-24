@@ -14,9 +14,7 @@
     }
 
     &__title {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
+        @include prefixing-values(width, fit-content);
         position: relative;
         color: $light;
         font-size: 3.3rem;
