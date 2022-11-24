@@ -14,6 +14,8 @@
     }
 
     &__title {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         position: relative;
         color: $light;
@@ -32,8 +34,8 @@
         }
 
         &:hover::before {
-            transform: scale(1);
-            transform-origin: left;
+            @include prefixing(transform, scale(1));
+            @include prefixing(transform-origin, left);
         }
     }
 
@@ -60,7 +62,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            transform: scale(2.2);
+            @include prefixing(transform, scale(2.2));
         }
     }
 
