@@ -994,6 +994,26 @@ body {
   background-color: transparent;
   caret-color: #c9e4ca;
 }
+.contact input::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: rgba(201, 228, 202, 0.3215686275);
+}
+.contact input::-moz-placeholder,
+.contact textarea::-moz-placeholder {
+  text-transform: capitalize;
+  color: rgba(201, 228, 202, 0.3215686275);
+}
+.contact input:-ms-input-placeholder,
+.contact textarea:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: rgba(201, 228, 202, 0.3215686275);
+}
+.contact input::-ms-input-placeholder,
+.contact textarea::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: rgba(201, 228, 202, 0.3215686275);
+}
 .contact input::placeholder,
 .contact textarea::placeholder {
   text-transform: capitalize;

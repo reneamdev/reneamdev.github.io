@@ -24,6 +24,26 @@
         background-color: transparent;
         caret-color: $light;
 
+        &::-webkit-input-placeholder {
+            text-transform: capitalize;
+            color: #c9e4ca52;
+        }
+
+        &::-moz-placeholder {
+            text-transform: capitalize;
+            color: #c9e4ca52;
+        }
+
+        &:-ms-input-placeholder {
+            text-transform: capitalize;
+            color: #c9e4ca52;
+        }
+
+        &::-ms-input-placeholder {
+            text-transform: capitalize;
+            color: #c9e4ca52;
+        }
+
         &::placeholder {
             text-transform: capitalize;
             color: #c9e4ca52;
