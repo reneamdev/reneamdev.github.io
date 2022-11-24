@@ -1,7 +1,7 @@
 .services {
     @include main-section-props-left;
     text-transform: capitalize;
-    color: $light;
+    color: map-get($colors, "tea-green");
 
     .container {
         z-index: 300;
@@ -22,7 +22,7 @@
             font-weight: 600;
             letter-spacing: 0.14rem;
             z-index: 999;
-            color: $light;
+            color: map-get($colors, "tea-green");
             @include prefixing(user-select, none);
         }
 
@@ -52,7 +52,7 @@
                 @include absoluteTopLeft50;
                 @include prefixing(transform, translate(-50%, -50%));
                 @include prefixing(transform-origin, center);
-                background-color: $primary;
+                background-color: map-get($colors, "charcoal");
                 cursor: pointer;
                 @include transition(all, 0.5, ease-in-out, 0.4);
 
@@ -71,7 +71,7 @@
                     font-weight: 600;
                     letter-spacing: 0.05rem;
                     @include fade("hide");
-                    background-color: $primary;
+                    background-color: map-get($colors, "charcoal");
                     @include transition(all, 0.3, ease-in-out, 0);
                 }
 
@@ -108,8 +108,8 @@
     }
 
     .rounding {
-        background-color: $primary;
-        border: 0.35rem dashed $primary;
+        background-color: map-get($colors, "charcoal");
+        border: 0.35rem dashed map-get($colors, "charcoal");
     }
 }
 
