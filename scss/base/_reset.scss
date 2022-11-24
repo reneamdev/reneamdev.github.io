@@ -4,13 +4,13 @@ body {
 }
 
 ::-moz-selection {
-    background-color: $success;
-    color: $primary;
+    background-color: map-get($colors, "eton-blue");
+    color: map-get($colors, "charcoal");
 }
 
 ::selection {
-    background-color: $success;
-    color: $primary;
+    background-color: map-get($colors, "eton-blue");
+    color: map-get($colors, "charcoal");
 }
 
 ul {
@@ -20,7 +20,6 @@ ul {
 }
 
 a {
-    // TODO:
     text-decoration: none !important;
 
     &:focus,
