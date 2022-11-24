@@ -42,7 +42,7 @@
         height: 20rem;
         padding: 1rem;
         position: relative;
-        border: 0.6rem solid $light;
+        border: 0.6rem solid map-get($colors, "tea-green");
         border-radius: 50%;
         overflow: hidden;
 
