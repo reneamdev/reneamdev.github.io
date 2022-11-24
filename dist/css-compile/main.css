@@ -838,6 +838,10 @@ body {
   transform-origin: center;
   background-color: #364958;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out 0.4s;
+  -moz-transition: all 0.5s ease-in-out 0.4s;
+  -ms-transition: all 0.5s ease-in-out 0.4s;
+  -o-transition: all 0.5s ease-in-out 0.4s;
   transition: all 0.5s ease-in-out 0.4s;
 }
 .services__wrapper__icons__item::before {
@@ -859,6 +863,10 @@ body {
   visibility: hidden;
   opacity: 0;
   background-color: #364958;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 .services__wrapper__icons__item:hover::before {
