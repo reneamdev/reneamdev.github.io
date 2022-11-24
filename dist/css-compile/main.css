@@ -219,6 +219,10 @@ body {
   user-select: none;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: all 0.2s ease-in 0s;
+  -moz-transition: all 0.2s ease-in 0s;
+  -ms-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
 @media (max-width: 991.98px) {
