@@ -3,7 +3,7 @@
     height: 100vh;
     position: relative;
     background-image: url("../../assets/images/backgrounds/coding.jpg");
-    @include cover-background;
+    @include reset-bg;
     overflow-x: hidden;
     @include set-transition(background-image, 1s, ease-in, 0s);
 

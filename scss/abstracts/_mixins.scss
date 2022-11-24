@@ -85,12 +85,6 @@
     justify-content: space-between;
 }
 
-@mixin cover-background {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 @mixin fade($type) {
     @if $type== "hide" {
         visibility: hidden;
