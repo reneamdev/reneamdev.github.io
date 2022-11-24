@@ -976,6 +976,10 @@ body {
   left: 0;
   z-index: 9999;
   background-color: rgba(59, 96, 100, 0.6117647059);
+  -webkit-transition: top 0.3s ease-in-out 0s;
+  -moz-transition: top 0.3s ease-in-out 0s;
+  -ms-transition: top 0.3s ease-in-out 0s;
+  -o-transition: top 0.3s ease-in-out 0s;
   transition: top 0.3s ease-in-out 0s;
 }
 .portfolio .my-card__img__links a {
