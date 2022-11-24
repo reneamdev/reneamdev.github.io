@@ -9,7 +9,6 @@
 - [Bootstrap5](https://getbootstrap.com/)
 - [html5Shiv](https://github.com/aFarkas/html5shiv)
 - [git](https://git-scm.com/)
-- [Fontawesome 6 Free](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [SwiperJs](https://swiperjs.com/)
 - [npm](https://www.npmjs.com/)
