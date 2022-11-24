@@ -6,6 +6,15 @@ $deep-space-sparkle: #3b6064;
 $charcoal: #364958;
 $dark-green: #0f4c5c;
 
+$colors: (
+    "tea-green": $tea-green,
+    "eton-blue": $eton-blue,
+    "steel-teal": $steel-teal,
+    "deep-space-sparkle": $deep-space-sparkle,
+    "charcoal": $charcoal,
+    "dark-green": $dark-green,
+);
+
 // * Reset the main colors of bootstrap.
 $primary: $charcoal;
 $secondary: $deep-space-sparkle;
