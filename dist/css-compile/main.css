@@ -137,6 +137,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  -webkit-transition: background-image 1s ease-in 0s;
+  -moz-transition: background-image 1s ease-in 0s;
+  -ms-transition: background-image 1s ease-in 0s;
+  -o-transition: background-image 1s ease-in 0s;
   transition: background-image 1s ease-in 0s;
 }
 .main::before {

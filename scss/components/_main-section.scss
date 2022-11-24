@@ -5,7 +5,7 @@
     background-image: url("../../assets/images/backgrounds/coding.jpg");
     @include reset-bg;
     overflow-x: hidden;
-    @include set-transition(background-image, 1s, ease-in, 0s);
+    @include transition(background-image, 1, ease-in, 0);
 
     &::before {
         content: "";
