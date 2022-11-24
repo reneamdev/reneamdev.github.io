@@ -13,7 +13,7 @@
         width: 28rem;
         height: 28rem;
         padding: 1rem;
-        border: 0.6rem solid $light;
+        border: 0.6rem solid map-get($colors, "tea-green");
         border-radius: 35%;
         overflow: hidden;
 
@@ -38,7 +38,7 @@
     }
 
     &__info {
-        color: $light;
+        color: map-get($colors, "tea-green");
 
         @include media-breakpoint-up(lg) {
             letter-spacing: 0.1rem;
@@ -62,7 +62,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-color: $steel-teal;
+                background-color: map-get($colors, "steel-teal");
                 z-index: -1;
                 @include transition(width, 0.4, ease, 0);
             }
@@ -108,7 +108,7 @@
             }
 
             &:hover {
-                color: $dark;
+                color: map-get($colors, "dark-green");
             }
         }
     }
