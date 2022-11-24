@@ -34,8 +34,8 @@
         width: 100%;
         padding: 1.1rem;
         margin-block: 1.5rem;
-        @include flex-center-horizontal;
-        @include flex-column;
+        @include flex-center-row;
+        @include prefixing(flex-direction, column);
         @include prefixing(align-items, center);
         color: map-get($colors, "eton-blue");
         text-transform: capitalize;
@@ -48,7 +48,7 @@
 
         &__head {
             width: 100%;
-            @include flex-between-horizontal;
+            @include flex-between-row;
             @include prefixing(align-items, center);
 
             span {
@@ -68,7 +68,7 @@
             span {
                 height: 100%;
                 border-radius: 100vmax;
-                @include absoluteTopLeftZero;
+                @include absolute-top-left(0, 0);
                 background-color: map-get($colors, "steel-teal");
 
                 &[data-rate="70"] {

@@ -25,64 +25,58 @@
     background-size: cover;
 }
 
-@mixin hero-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    @include prefixing(transform, translate(-50%, -50%));
-}
-
 @mixin center-x {
     display: block;
     @include prefixing(margin-inline, auto);
 }
 
-@mixin absoluteTopLeftZero {
+@mixin absolute-top-left($top, $left) {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: $top;
+    left: $left;
 }
 
-@mixin absoluteTopLeft50 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-@mixin flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin flex-center-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, center);
+    @include prefixing(align-items, center);
 }
 
 @mixin flex-center-column {
-    @include flex-center;
-    flex-direction: column;
+    @include flex-center-row;
+    @include prefixing(flex-direction, column);
 }
 
-@mixin flex-center-vertical {
-    display: flex;
-    align-items: center;
+@mixin flex-evenly-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-evenly);
+    @include prefixing(align-items, center);
 }
 
-@mixin flex-center-horizontal {
-    display: flex;
-    justify-content: center;
+@mixin flex-between-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-between);
+    @include prefixing(align-items, center);
 }
 
-@mixin flex-evenly-horizontal {
-    display: flex;
-    justify-content: space-evenly;
-}
+@mixin breakpoint($point) {
+    @if $point == tablet {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
 
-@mixin flex-between-horizontal {
-    display: flex;
-    justify-content: space-between;
+    @if $point == mobile {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @if $point == large {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
 }
 
 @mixin fade($type) {
@@ -114,7 +108,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    @include flex-center;
+    @include flex-center-row;
     background-color: transparent;
     @include transition(all, 0.5, ease-in-out, 0);
 }
@@ -139,7 +133,7 @@
     position: absolute;
     bottom: -0.2rem;
     background-color: $steel-teal;
-    transform: scaleX(0);
-    transform-origin: right;
+    @include prefixing(transform, scaleX(0));
+    @include prefixing(transform-origin, right);
     @include transition(transform, 0.34, ease-in, 0);
 }
