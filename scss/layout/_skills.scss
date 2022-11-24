@@ -10,7 +10,7 @@
     }
 
     &__title {
-        width: fit-content;
+        @include prefixing-values(width, fit-content);
         margin-bottom: 2rem;
         position: relative;
         font-size: 3.6rem;
@@ -25,8 +25,8 @@
         }
 
         &:hover::before {
-            transform: scale(1);
-            transform-origin: left;
+            @include prefixing(transform, scale(1));
+            @include prefixing(transform-origin, left);
         }
     }
 
@@ -36,7 +36,7 @@
         margin-block: 1.5rem;
         @include flex-center-horizontal;
         @include flex-column;
-        align-items: center;
+        @include prefixing(align-items, center);
         color: $success;
         text-transform: capitalize;
         font-size: 1.45rem;
@@ -49,7 +49,7 @@
         &__head {
             width: 100%;
             @include flex-between-horizontal;
-            align-items: center;
+            @include prefixing(align-items, center);
 
             span {
                 display: block;
