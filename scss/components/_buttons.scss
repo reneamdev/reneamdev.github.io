@@ -4,8 +4,8 @@
     display: block;
     padding: 0.6rem 0.2rem;
     border-radius: 1rem;
-    color: $primary;
-    background-color: $light;
+    color: map-get($colors, "charcoal");
+    background-color: map-get($colors, "tea-green");
     text-align: center;
     text-transform: capitalize;
     font-size: 1.4rem;
