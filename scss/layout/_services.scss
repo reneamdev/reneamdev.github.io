@@ -17,13 +17,13 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            @include prefixing(transform, translate(-50%, -50%));
             font-size: 1.66rem;
             font-weight: 600;
             letter-spacing: 0.14rem;
             z-index: 999;
             color: $light;
-            user-select: none;
+            @include prefixing(user-select, none);
         }
 
         &__circle {
@@ -33,14 +33,14 @@
             padding: 0.25rem;
             border-radius: 50%;
             background-clip: content-box;
-            animation: rotation-360 10s linear infinite;
+            @include prefixing(animation, rotation-360 10s linear infinite);
         }
 
         &__icons {
             width: 100%;
             height: 100%;
             @include absoluteTopLeft50;
-            transform: translate(-50%, -50%);
+            @include prefixing(transform, translate(-50%, -50%));
             font-size: 2.5rem;
             z-index: -1;
 
@@ -50,8 +50,8 @@
                 border-radius: 50%;
                 @include flex-center;
                 @include absoluteTopLeft50;
-                transform: translate(-50%, -50%);
-                transform-origin: center;
+                @include prefixing(transform, translate(-50%, -50%));
+                @include prefixing(transform-origin, center);
                 background-color: $primary;
                 cursor: pointer;
                 @include set-transition(all, 0.5s, ease-in-out, 0.4s);
@@ -81,27 +81,27 @@
                 }
 
                 &.deg-45 {
-                    transform: translate(-17rem, -9rem) scale(1);
+                    @include prefixing(transform, translate(-17rem, -9rem) scale(1));
                 }
 
                 &.deg-90 {
-                    transform: translate(-3rem, -17.5rem) scale(1);
+                    @include prefixing(transform, translate(-3rem, -17.5rem) scale(1));
                 }
 
                 &.deg-135 {
-                    transform: translate(12rem, -9rem) scale(1);
+                    @include prefixing(transform, translate(12rem, -9rem) scale(1));
                 }
 
                 &.deg-180 {
-                    transform: translate(12rem, 6rem) scale(1);
+                    @include prefixing(transform, translate(12rem, 6rem) scale(1));
                 }
 
                 &.deg-230 {
-                    transform: translate(-2rem, 12rem) scale(1);
+                    @include prefixing(transform, translate(-2rem, 12rem) scale(1));
                 }
 
                 &.deg-270 {
-                    transform: translate(-16rem, 5rem) scale(1);
+                    @include prefixing(transform, translate(-16rem, 5rem) scale(1));
                 }
             }
         }
@@ -113,8 +113,14 @@
     }
 }
 
+@-webkit-keyframes rotation-360 {
+    100% {
+        @include prefixing(transform, rotateZ(360deg));
+    }
+}
+
 @keyframes rotation-360 {
     100% {
-        transform: rotateZ(360deg);
+        @include prefixing(transform, rotateZ(360deg));
     }
 }
