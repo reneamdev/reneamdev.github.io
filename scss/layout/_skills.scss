@@ -14,7 +14,7 @@
         margin-bottom: 2rem;
         position: relative;
         font-size: 3.6rem;
-        color: $light;
+        color: map-get($colors, "tea-green");
 
         @include media-breakpoint-down(md) {
             margin-left: 1rem;
@@ -37,7 +37,7 @@
         @include flex-center-horizontal;
         @include flex-column;
         @include prefixing(align-items, center);
-        color: $success;
+        color: map-get($colors, "eton-blue");
         text-transform: capitalize;
         font-size: 1.45rem;
 
@@ -69,7 +69,7 @@
                 height: 100%;
                 border-radius: 100vmax;
                 @include absoluteTopLeftZero;
-                background-color: $steel-teal;
+                background-color: map-get($colors, "steel-teal");
 
                 &[data-rate="70"] {
                     width: 70%;
