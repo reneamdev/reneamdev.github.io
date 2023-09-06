@@ -926,8 +926,8 @@ section {
 .skills__box__line span[data-rate="90"] {
   width: 90%;
 }
-.skills__box__line span[data-rate="95"] {
-  width: 95%;
+.skills__box__line span[data-rate="100"] {
+  width: 100%;
 }
 
 .services {
