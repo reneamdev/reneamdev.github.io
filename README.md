@@ -1,4 +1,4 @@
-# James Oliver portfolio site
+# Leonardo Alberto Molinari portfolio site
 
 ## Tech Used
 
@@ -24,27 +24,13 @@ npm install
 - Responsive with all screens
 - Creative a new idea for the layout design
 
-
-## Demo
-
-you can see the live of the site [here](https://james-oliver-portfolio.netlify.app/)
-
-
-## Author
-
-> [Khaled Mohamed](https://github.com/krypton225/)
-
-
 ## Lessons Learned
 
 I learned a lot from creating this project such as:
+
 - Using powerfull of npm.
 - Using SCSS.
 - Using little of Typescript.
 - Using SwiperJS.
 - Customize the layout to be a responsive design.
 - And a lot in solving the problems which I faced while building the project.
-
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
