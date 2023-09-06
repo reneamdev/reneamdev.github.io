@@ -1014,7 +1014,7 @@
 
       <!-- * Start contact section -->
       <section class="contact" id="contact">
-        <form method="POST" class="form needs-validation" autocomplete="off">
+        <form class="form needs-validation" autocomplete="off">
           <div class="container">
             <div class="row gy-4">
               <div class="col-md-6">
@@ -1062,21 +1062,6 @@
               </div>
               <!-- ./col-md-6 -->
 
-              <div class="col-md-6">
-                <div class="form-action">
-                  <input
-                    type="email"
-                    class="w-100 your-email"
-                    name="Email"
-                    id="your-email"
-                    placeholder="enter your email...."
-                    required
-                  />
-                </div>
-                <!-- ./form-action -->
-              </div>
-              <!-- ./col-md-6 -->
-
               <div class="col-12 w-100">
                 <div class="form-action">
                   <textarea
@@ -1108,6 +1093,36 @@
     <!-- ./main -->
 
     <!-- * All my script files -->
+    <script>
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          var recipient = "leonardo.amdev@outlook.com";
+          var subject =
+            "From" +
+            document.getElementById("your-first-name").value +
+            " " +
+            document.getElementById("your-second-name").value;
+          var message =
+            document.getElementById("msg").value +
+            " Contact: " +
+            document.getElementById("phone-number-form").value;
+
+          // Construct the mailto link
+          var mailtoLink =
+            "mailto:" +
+            recipient +
+            "?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(message);
+
+          // Open the user's email client
+          window.location.href = mailtoLink;
+        });
+    </script>
     <script type="module" src="./dist/js/imports.js"></script>
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./dist/js/main.js"></script>
